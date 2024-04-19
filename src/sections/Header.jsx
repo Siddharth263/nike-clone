@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import MySlider from "./Slider";
+import Slider from "./Slider";
 
 import JordanLogo from "../assets/top-navbar/jordan-logo.svg";
 
@@ -10,14 +10,14 @@ const Header = () => {
         <div className="px-10 m-2 w-2/3">
           <img src={JordanLogo} alt="Jordan Logo" width={25} height={22} />
         </div>
-        <div className="flex gap-3 ms-52">
+        <div className="flex gap-3 border-2 w-full justify-end">
           <h5 className="h5">Find a Store</h5>
           <h5 className="h5">Help</h5>
           <h5 className="h5">Join Us</h5>
         </div>
       </section>
       <Navbar />
-      <MySlider />
+      <Slider />
     </header>
   );
 };

@@ -1,4 +1,4 @@
-import { Header, Hero, Arrivals } from "./components/index";
+import { Header, Hero, Arrivals, Trends, DontMiss } from "./sections/index";
 
 const App = () => (
   <main className="overflow-hidden select-none">
@@ -10,25 +10,12 @@ const App = () => (
 
     {/* Arrivals section */}
     <Arrivals />
-    {/* Trend section */}
-    <section>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </section>
 
-    {/* Just in section */}
-    <section>
-      <div>
-        <div></div>
-        <div></div>
-      </div>
-    </section>
+    {/* Trend section */}
+    <Trends />
 
     {/* Dont miss section */}
-    <section></section>
+    <DontMiss />
   </main>
 );
 
