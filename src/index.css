@@ -56,4 +56,20 @@
   .sport-button {
     @apply mt-10 text-sm hover:text-slate-400 hover:border-slate-400 border-b-2 border-black font-semibold tracking-tighter;
   }
+
+  .footer {
+    @apply mt-10 px-20 pb-6 pt-10 bg-black text-white
+  }
+
+  .footer-div1 {
+    @apply flex tracking-tighter justify-between gap-20
+  }
+
+  .footer-p {
+    @apply text-xs tracking-wide hover:text-white capitalize text-[#777777]
+  }
+
+  .footer-social-div {
+    @apply bg-slate-400 border-2 border-slate-400 rounded-full h-8
+  }
 }

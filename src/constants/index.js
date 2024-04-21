@@ -39,10 +39,10 @@ import ThankYou from "../assets/members/thankYou.jpeg";
 import Wellness from "../assets/members/wellness.jpeg";
 
 // Footer socialIcons
-import Twitter from '../assets/Twitter.jsx';
-import Facebook from '../assets/Facebook.jsx';
-import YouTube from '../assets/YouTube.jsx';
-import Instagram from '../assets/Instagram.jsx';
+import YouTube from '../assets/yt-icon.svg'
+import Twitter from '../assets/twitter-icon.svg'
+import Instagram from '../assets/insta-icon.svg'
+import Facebook from '../assets/fb-icon.svg'
 
 
 
@@ -414,7 +414,7 @@ export const footerDiv1 = [
     href: "https://www.nike.com/in/retail",
   },
   {
-    label: "become a member1",
+    label: "become a member",
     href: "https://www.nike.com/in/register",
   },
   {
@@ -480,22 +480,22 @@ export const footerCompany = [
 export const socialIcons = [
   {
     name: "twitter.com",
-    icon: "",
+    icon: Twitter,
     href: "https://twitter.com/Nike",
   },
   {
     name: "facebook.com",
-    icon: "",
+    icon: Facebook,
     href: "https://www.facebook.com/nike",
   },
   {
     name: "youtube.com",
-    icon: "",
+    icon: YouTube,
     href: "https://www.youtube.com/user/nike",
   },
   {
     name: "instagram.com",
-    icon: "",
+    icon: Instagram,
     href: "https://instagram.com/nike",
   },
 ];
