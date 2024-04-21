@@ -37,7 +37,7 @@ Once installed, you can start the development server:
 
 (`npm run dev`)
 
-This will start a local development server at http://localhost:3000, where you can view and interact with the Nike.com clone.
+This will start a local development server at http://localhost:5173, where you can view and interact with the Nike.com clone.
 
 ## Deployment
 
