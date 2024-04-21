@@ -1,4 +1,14 @@
-import { Header, Hero, Arrivals, Trends, DontMiss } from "./sections/index";
+import {
+  Header,
+  Hero,
+  Arrivals,
+  Trends,
+  DontMiss,
+  ClassicSpotlight,
+  Sport,
+  Members,
+  Footer,
+} from "./sections/index";
 
 const App = () => (
   <main className="overflow-hidden select-none">
@@ -16,6 +26,18 @@ const App = () => (
 
     {/* Dont miss section */}
     <DontMiss />
+
+    {/* Classic Spotlight */}
+    <ClassicSpotlight />
+
+    {/* Shop by Sport */}
+    <Sport />
+
+    {/* Members */}
+    <Members />
+
+    {/* Footer */}
+    <Footer />
   </main>
 );
 

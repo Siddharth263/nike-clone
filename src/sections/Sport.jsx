@@ -2,21 +2,21 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
-import { trend } from "../constants/index.js";
+import { sport } from "../constants/index.js";
 
-const Trends = () => {
+const Sport = () => {
   return (
     <section className="mt-10">
       <div>
         <div className="flex justify-between p-8">
-          <p className="trend-p1">Trends</p>
+          <p className="trend-p1">Shop By Sport</p>
         </div>
         <div className="p-8">
           <Swiper
             slidesPerView={3}
             spaceBetween={20}
             autoplay={{
-              delay: 2000,
+              delay: 3000,
             }}
             modules={[Autoplay]}
             breakpoints={{
@@ -33,20 +33,23 @@ const Trends = () => {
               },
             }}
           >
-            {trend.map((item) => (
-              <SwiperSlide key={item.name}>
-                <div className="relative">
-                  <a href={item.href} className="relative block">
+            {sport.map((item) => (
+              <a href={item.href} key={item.name}>
+                <SwiperSlide>
+                  <div>
                     <img
-                      className="block w-full h-auto"
-                      src={item.imgHref}
+                      src={item.imghref}
                       alt={item.name}
+                      className="hover:cursor-pointer"
                     />
-                    <div className="trend-gradient"></div>
-                    <p className="trend-name">{item.name}</p>
-                  </a>
-                </div>
-              </SwiperSlide>
+                    <p className="text-lg font-semibold mt-8">{item.name}</p>
+                    <p className="text-sm font-semibold text-gray-500">
+                      {item.desc}
+                    </p>
+                    <button className="sport-button">Shop</button>
+                  </div>
+                </SwiperSlide>
+              </a>
             ))}
           </Swiper>
         </div>
@@ -55,4 +58,4 @@ const Trends = () => {
   );
 };
 
-export default Trends;
+export default Sport;

@@ -32,15 +32,19 @@ const Arrivals = () => {
                 slidesPerView: 2,
                 spaceBetween: 20,
               },
-              1024: {
+              798: {
                 slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              1024: {
+                slidesPerView: 4,
                 spaceBetween: 30,
               }
             }}
           >
             {arrivals.map((items) => (
               <SwiperSlide key={items.name}>
-                <div className="swiper-slide">
+                <div className="swiper-slide hover:border-2 hover:border-black hover:p-4">
                   <a href={items.href}>
                     <img src={items.imgHref} alt={items.name} />
                     <p className="text-xl tracking-wide pt-5">{items.name}</p>
